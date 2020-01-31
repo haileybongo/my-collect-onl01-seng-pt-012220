@@ -1,4 +1,10 @@
 def my_collect(array)
   i = 0 
-  collect = [] 
+  collect = []
+  while i < array.length 
+  collect << yield(item)
+  i += 1 
+  end
+collect 
+end
 
